@@ -41,10 +41,10 @@ def total_even_pairs(src)
     if num[0] && num[1] % 2 == 0
       puts even_numbers.push(num)
       end }
-  even_numbers.flatten
   
   n = 0 
     while n < even_numbers.length do
+      even_numbers.flatten
       total += even_numbers[n]
       n = n + 1
     end
