@@ -45,7 +45,7 @@ def total_even_pairs(src)
   
   n = 0 
     while n < even_numbers.length do
-      total += @a[i]
+      total += even_numbers[n]
       i = i + 1
     end
   return even_numbers
