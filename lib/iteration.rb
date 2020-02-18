@@ -44,7 +44,10 @@ def total_even_pairs(src)
   even_numbers.flatten
   
   n = 0 
-  
+    while n < even_numbers.length do
+      total += @a[i]
+      i = i + 1
+    end
   return even_numbers
   
     # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
