@@ -35,10 +35,11 @@ end
 def total_even_pairs(src)
   all_numbers = src
   
+  even_numbers = []
   total = 0
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
-      total += num[0] && num[1]
+      total += all_numbers
       end }
   return total
 end
