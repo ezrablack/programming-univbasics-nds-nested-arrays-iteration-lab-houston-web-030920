@@ -35,18 +35,18 @@ end
 def total_even_pairs(src)
   all_numbers = src
   
-  even_numbers = []
-  total = 0 
-  all_numbers.each { |num| 
-    if num[0] && num[1] % 2 == 0
-      puts even_numbers.push(num)
-      end }
+#  even_numbers = []
+#  total = 0 
+#  all_numbers.each { |num| 
+#    if num[0] && num[1] % 2 == 0
+#      puts even_numbers.push(num)
+#      end }
   
   row_index = 0
-while row_index < guessing_game_grid.count do
+while row_index < all_numbers.count do
   element_index = 0
-  while element_index < guessing_game_grid[row_index].count do
-    total += guessing_game_grid[row_index][element_index]
+  while element_index < all_numbers[row_index].count do
+    total += all_numbers[row_index][element_index]
     element_index += 1
   end
   row_index += 1
