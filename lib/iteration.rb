@@ -40,8 +40,7 @@ def total_even_pairs(src)
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
       puts even_numbers.push(num)
-    end }
-  end
+      end }
   return even_numbers
   
     # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
