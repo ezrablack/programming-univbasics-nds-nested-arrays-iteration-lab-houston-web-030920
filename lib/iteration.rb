@@ -42,7 +42,7 @@ def total_even_pairs(src)
       puts even_numbers.push(num)
     end }
   end
-  return all_numbers
+  return even_numbers
   
     # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # if both numbers in the pair are even, then add both those numbers to the
