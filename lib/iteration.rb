@@ -42,12 +42,14 @@ def total_even_pairs(src)
       puts even_numbers.push(num)
       end }
   
-  n = 0 
-    while n < even_numbers.length do
-      even_numbers.flatten
-      total += even_numbers[n]
-      n = n + 1
-    end
+  row_index = 0
+while row_index < guessing_game_grid.count do
+  element_index = 0
+  while element_index < guessing_game_grid[row_index].count do
+    total += guessing_game_grid[row_index][element_index]
+    element_index += 1
+  end
+  row_index += 1
   return total
   
     # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
