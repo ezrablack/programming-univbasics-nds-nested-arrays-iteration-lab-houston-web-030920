@@ -38,11 +38,13 @@ def total_even_pairs(src)
   even_numbers = []
   total = 0 
   n = 0 
-  while n <
+  while n < even_numbers.count do 
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
       puts even_numbers.push(num)
       end }
+      even_numbers.flatten
+      
   return even_numbers
   
     # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
