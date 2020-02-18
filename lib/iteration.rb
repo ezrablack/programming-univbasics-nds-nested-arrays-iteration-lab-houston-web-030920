@@ -43,5 +43,7 @@ def total_even_pairs(src)
       end }
   while total < even_numbers.count do
     total += even_numbers
+    even_numbers += 1 
+  end
   return total
 end
