@@ -36,14 +36,10 @@ def total_even_pairs(src)
   all_numbers = src
   
   even_numbers = []
-  total = 0 
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
       even_numbers.push(num)
       end }
-  while total < even_numbers.count do
-    total += even_numbers
-    total += 1 
-  end
+  total = add(even_numbers)
   return total
 end
