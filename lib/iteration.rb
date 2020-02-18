@@ -40,6 +40,5 @@ def total_even_pairs(src)
     if num[0] && num[1] % 2 == 0
       even_numbers.push(num)
       end }
-  total = add(even_numbers)
-  return total
+  return even_numbers
 end
