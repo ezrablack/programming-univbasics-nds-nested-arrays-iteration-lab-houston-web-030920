@@ -39,7 +39,9 @@ def total_even_pairs(src)
   total = 0
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
-      total += all_numbers
+      even_numbers.push(num)
+      x = even_numbers
+      total += x
       end }
   return total
 end
