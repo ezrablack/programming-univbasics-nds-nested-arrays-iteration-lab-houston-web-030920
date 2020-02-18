@@ -37,9 +37,14 @@ def total_even_pairs(src)
   
   even_numbers = []
   total = 0
+  numbers = 0 
   all_numbers.each { |num| 
     if num[0] && num[1] % 2 == 0
       even_numbers.push(num)
       end }
-  return even_numbers
+  while numbers < even_numbers.count do
+    total += even_numbers[numbers]
+    numbers += 1 
+  end
+  return total
 end
